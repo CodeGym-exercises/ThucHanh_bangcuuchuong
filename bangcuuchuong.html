@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bang cuu chuong</title>
+	<style type="text/css">
+		table{
+			border:1px solid black;		
+			margin:0 auto;	
+		}
+		tr{
+			
+		}
+		td{
+			border:1px solid black;	
+			width:60px;
+		}
+	</style>
+</head>
+<body>
+	<table id="tb" style="width:55%;">
+		
+	</table>
+	<script type="text/javascript">
+		let tb = document.getElementById('tb');
+		let temp ="";
+		for(let i = 1;i<10;i++){			
+			for(let j = 2;j<10;j++){
+				
+				temp += "<td>" + j +" x "+ i +" = "+j*i + "</td>";
+			}
+			tb.innerHTML += temp;
+			temp="";
+		}
+	</script>
+</body>
+</html>
